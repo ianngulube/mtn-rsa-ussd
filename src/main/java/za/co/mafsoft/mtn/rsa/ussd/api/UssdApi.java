@@ -17,6 +17,6 @@ public class UssdApi {
     @Consumes(MediaType.APPLICATION_JSON)
     public Object invoke(Object request) {
         log.info("Received USSD request: {}", request);
-        return List.of(request);
+        return request;
     }
 }
